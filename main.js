@@ -10,6 +10,10 @@ var swiper = new Swiper(".mySwiper", {
         el: "swiper-pagination",
         clickable: true,
     },
+    autoplay: {
+      delay: 3000, // Delay between slides in milliseconds (e.g., 3 seconds)
+      disableOnInteraction: false, // Optional: keep autoplay running after user interaction
+    },
     breakpoints: {
         599: {
             slidesPerView: 2,
